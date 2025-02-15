@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Tobias</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="document.body.classList.add('loaded')">
+
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <button class="menu-toggle">☰</button>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">🎮 Game</a></li>
+            <li><a href="#">🛒 Store</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <header>
+            <div class="profile-container">
+                <div class="profile-wrapper">
+                    <img src="Image/Foto Pribadi.jpg" alt="Profile Picture" class="profile-image">
+                </div>
+            </div>
+            <h1>Tobias Rejanuar</h1>
+            <p>Web Developer | Network Technician | Gamer</p>
+        </header>
+
+        <div class="info">
+            <div>
+                <h2>Personal Info</h2>
+                <p><strong>Name:</strong> Tobias Rejanuar</p>
+                <p><strong>Age:</strong> 17 Years</p>
+                <p><strong>Location:</strong> Surakarta, Indonesia</p>
+            </div>
+            <div>
+                <h2>Contact</h2>
+                <p><strong>Email:</strong> tobiasrejanuar@gmail.com</p>
+                <p><strong>Phone:</strong> +62 85640163189</p>
+            </div>
+            <div>
+                <h2>Skills</h2>
+                <P><strong>Network Technician</strong></P>
+                <p><strong>HTML & CSS</strong></p>
+            </div>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="social-media">
+            <h2>Social Media</h2>
+            <a href="https://www.instagram.com/bearsariee/profilecard/?igsh=NXZkNG84dHUwcndo" target="_blank">
+                <img src="Image/logo i.jpeg" alt="Instagram">
+            </a>
+            <a href="https://youtube.com/@tobiasrejanuar?si=_-VZyrQjMHjD9DDW" target="_blank">
+                <img src="Image/logo y.png" alt="YouTube">
+            </a>
+        </div>
+         <!-- Footer -->
+         <div class="footer">
+            <p>&copy; 2025 Tobias Rejanuar. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const sidebar = document.querySelector(".sidebar");
+
+        menuToggle.addEventListener("click", function() {
+            sidebar.classList.toggle("active");
+        });
+    });
+</script>
+
+</body>
+</html>
